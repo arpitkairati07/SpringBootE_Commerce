@@ -2,6 +2,7 @@ package com.ecommerce.SpringBootE_Commerce.controller;
 
 import com.ecommerce.SpringBootE_Commerce.model.Category;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,6 +19,7 @@ public class CategoryController {
         return categories;
     }
 
+    @PostMapping("api/public/categories")
     public String createCategory(@RequestBody Category category){
         categories.add(category);
         return "Category Added Successfully";

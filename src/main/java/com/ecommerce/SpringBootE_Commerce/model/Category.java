@@ -2,9 +2,9 @@ package com.ecommerce.SpringBootE_Commerce.model;
 
 public class Category {
     private Long categoryId;
-    private Long categoryName;
+    private String categoryName;
 
-    public Category(Long categoryId, Long categoryName) {
+    public Category(Long categoryId, String categoryName) {
         this.categoryId = categoryId;
         this.categoryName = categoryName;
     }
@@ -17,11 +17,11 @@ public class Category {
         this.categoryId = categoryId;
     }
 
-    public Long getCategoryName() {
+    public String getCategoryName() {
         return categoryName;
     }
 
-    public void setCategoryName(Long categoryName) {
+    public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
     }
 }
